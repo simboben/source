@@ -36,7 +36,10 @@ end
 #add in simpleform
 gem 'simple_form'
 
+#add in our adminpanel
 
+gem 'devise'
+gem 'activeadmin'
 
 
 group :development do
