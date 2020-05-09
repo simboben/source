@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
+  #categories controller
+  resources :categories
+
   #items controller
   resources :items
 
