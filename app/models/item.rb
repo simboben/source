@@ -1,7 +1,10 @@
 class Item < ApplicationRecord
 
-validates :title, presence: true
+  has_many :category_items
+  has_many :categories, through: :category_items
 
-mount_uploader :image, ImageUploader
+  validates :title, presence: true
+
+  mount_uploader :image, ImageUploader
 
 end
